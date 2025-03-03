@@ -1,0 +1,235 @@
+*{
+    margin: 0px;
+}
+.btn-primary:hover{
+    background-color:#eb8da1 ; 
+}
+/* header Section */
+.header-container{
+    display: flex;
+    width: 100%;
+    height: 850px;
+    background-color: rgba(229, 84, 115, 0.10) ;
+    gap: 150px;
+}
+.description-container{
+    margin-left: 200px;
+    padding-top: 200px;
+    padding-bottom: 100px;
+    width: 34%;
+}
+.header-title{
+    color: #272727;
+    font-family: Lato;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+.header-desc{
+    margin-top: 35px;
+    color: rgba(39, 39, 39, 0.60);
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px
+}
+.btn-primary{
+    background-color: #E55473;
+    border: none;
+    padding: 20px 43px;
+    border-radius: 8px;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 30px;
+}
+.header-image{
+    padding-top: 50px;
+    width: 635px;
+    height: 800px;
+}
+/* <!-- Featured Flower Section --> */
+.featured-container{
+    width: 100%;
+}
+.section-title{
+    color: #272727;
+    text-align: center;
+    font-family: Lato;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin: 180px 750px 0px 750px;
+}
+.section-info{
+    color: rgba(39, 39, 39, 0.60);
+    text-align: center;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 24px 650px 50px 650px;
+}
+.box1{
+    border-radius: 300px 300px 0px 0px;
+    background: rgba(167, 33, 98, 0.15);
+}
+.img1{
+    padding: 110px 75px 0px 75px;
+}
+.box2{
+    border-radius: 300px 300px 0px 0px;
+    background: rgba(5, 151, 160, 0.15);
+}
+.img2{
+    padding: 117px 45px 51px 45px;
+}
+.box3{ 
+    border-radius: 300px 300px 0px 0px;
+    background: rgba(71, 125, 17, 0.15);
+}
+.img3{
+    padding: 67px 75px 0px 75px;
+}
+.box-container a{
+    color: #272727;
+}
+.box-container a:hover{
+    color: #E55473;
+}
+.box-container{
+    text-align: center;
+    font-family: Lato;
+    font-size: 24px;   
+    font-weight: 700;
+}
+
+.image-container{
+    padding:50px 240px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+}
+/* Support Section */
+.support h4{
+    color: rgba(39, 39, 39, 0.80);
+    text-align: center;
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 35px;
+}
+.support img{
+    width: 77px;
+    height: 82.5px;
+}
+.support{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.support-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 8px;
+    background: rgba(39, 39, 39, 0.05);
+    height: 320px;
+    margin: 120px 240px 120px 240px;
+}
+/* Hot Deals Section */
+.deals-container{
+    display: flex;
+    gap: 150px;
+    width: 100%;
+    height: 620px;
+    border-radius: 8px;
+    background: rgba(229, 84, 115, 0.05);
+}
+.deal-desc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    padding-top: 230px;
+    margin-left: 400px;
+}
+.deal-img{
+    padding-top: 150px ;
+}
+.deal-title{
+    color: #272727;
+    font-family: Lato;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+.deal-info{
+    color: rgba(39, 39, 39, 0.60);
+    text-align: center;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    margin-top: 25px ;
+    margin-bottom: 30px;
+}
+/* Media screen query for header for small device*/
+@media screen and (max-width: 576px) {
+    /* Media screen query for header */
+    .header-container{
+        flex-direction: column;
+        height: 1120px;
+        gap: 0px;
+    }
+    .description-container{
+        margin-left: 20px;
+        width: calc(100% - 40px);
+        padding-top: 100px;
+    }
+    .header-title{
+         font-size: 50px;
+    }
+    .header-image{  
+        padding-top: 0px;
+        padding-left: 50px;
+        width: 350px;
+        height: 400px;
+    }
+    /* Media query for Featured Flower Section */
+    .section-title,
+    .section-info
+    {
+        padding: 20px;
+        margin: 0px;
+    }
+    .section-title{
+        margin-top: 20px;
+    }
+    .img1,.img2,.img3{
+        width: 200px;
+    }
+
+    .image-container{
+        padding: 20px;
+        width: calc(100% - 40px);
+        grid-template-columns: repeat(1,1fr);
+        gap: 50px;
+    }
+     /* Media query for support Section */
+    .support-container{
+        flex-direction: column;
+        margin:100px 10px;
+        height:fit-content;
+        border-radius: 20px;
+        gap: 20px;
+    }
+}
+
